@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="lumivora.jpg" type="image/x-icon">
+    <title>Lumivora - Software Development & Data Science Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="lumivora-no.png" alt="Lumivora" class="logo">
+        <div class="hamburger" onclick="toggleNav()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+        </div>
+    </nav>
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Transform Your Business with Digital Innovation</h1>
+            <p class="hero-text">Kami menyediakan solusi pengembangan software dan data science terintegrasi untuk percepat transformasi digital bisnis Anda.</p>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="section-title">Our Expertise</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <i class="fas fa-microchip service-icon"></i>
+                <h3>Custom Software Development</h3>
+                <p>Pengembangan aplikasi khusus untuk kebutuhan bisnis Anda</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-database service-icon"></i>
+                <h3>Data Science Solutions</h3>
+                <p>Analisis data dan implementasi machine learning untuk bisnis</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-robot service-icon"></i>
+                <h3>AI Integration</h3>
+                <p>Implementasi kecerdasan buatan dalam sistem perusahaan</p>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-title">Our Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600" alt="Project 1" class="portfolio-image">
+                <div class="portfolio-info">
+                    <h3>Enterprise Resource Planning</h3>
+                    <p>Sistem manajemen perusahaan terintegrasi</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="stok-saat-ini.png" alt="Project 2" class="portfolio-image">
+                <div class="portfolio-info">
+                    <h3>Optimization Inventory System</h3>
+                    <p>Sistem Optimasi Inventory</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600" alt="Project 3" class="portfolio-image">
+                <div class="portfolio-info">
+                    <h3>Data Analytics Dashboard</h3>
+                    <p>Visualisasi data real-time untuk manajemen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Lumivora</h3>
+                <p>Transformasi digital untuk masa depan bisnis Anda</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li>Jl Perkutut 1 No 52</li>
+                    <li>lumivora@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/pixcel-narang-29b83b277/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/6285651106183"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tambahkan efek scroll smooth
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        function toggleNav() {
+    const navLinks = document.querySelector('.nav-links');
+    const hamburger = document.querySelector('.hamburger');
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+}
+    </script>
+</body>
+</html>

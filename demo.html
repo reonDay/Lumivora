@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="lumivora.jpg" type="image/x-icon">
+    <title>Lumivora - Software Development & Data Science Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="lumivora-no.png" alt="Lumivora" class="logo">
+        <div class="hamburger" onclick="toggleNav()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="demo.html">Demo</a>
+        </div>
+    </nav>
+    <br><br><br>
+    <section class="demo-video" id="demos">
+        <h2 class="section-title">Software Demo</h2>
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <video class="preview-video" muted loop>
+                        <source src="demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h3>AI Analytics Dashboard</h3>
+                    <p>Visualisasi data prediktif berbasis kecerdasan buatan</p>
+                    <a href="#" class="btn video-btn">Lihat Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-container">
+            <span class="close-btn" onclick="closeVideo()">&times;</span>
+            <video class="video-player" controls>
+                <source src="demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Lumivora</h3>
+                <p>Transformasi digital untuk masa depan bisnis Anda</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="demo.html">Demo</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li>Jl Perkutut 1 No 52</li>
+                    <li>lumivoratech@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/pixcel-narang-29b83b277/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/6285651106183"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
